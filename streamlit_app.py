@@ -54,37 +54,37 @@ def initialize_data(conn):
         INSERT INTO inventory
             (item_name, price, units_sold, units_left, cost_price, reorder_point, description)
         VALUES
-            -- Beverages
-            ('Bottled Water (500ml)', 1.50, 115, 15, 0.80, 16, 'Hydrating bottled water'),
-            ('Soda (355ml)', 2.00, 93, 8, 1.20, 10, 'Carbonated soft drink'),
-            ('Energy Drink (250ml)', 2.50, 12, 18, 1.50, 8, 'High-caffeine energy drink'),
-            ('Coffee (hot, large)', 2.75, 11, 14, 1.80, 5, 'Freshly brewed hot coffee'),
-            ('Juice (200ml)', 2.25, 11, 9, 1.30, 5, 'Fruit juice blend'),
+            -- İçecekler
+            ('Şişe Su (500ml)', 1.50, 115, 15, 0.80, 16, 'Susuzluğu gideren şişe su'),
+            ('Kola (355ml)', 2.00, 93, 8, 1.20, 10, 'Gazlı içecek'),
+            ('Enerji İçeceği (250ml)', 2.50, 12, 18, 1.50, 8, 'Yüksek kafeinli enerji içeceği'),
+            ('Kahve (sıcak, büyük)', 2.75, 11, 14, 1.80, 5, 'Taze demlenmiş sıcak kahve'),
+            ('Meyve Suyu (200ml)', 2.25, 11, 9, 1.30, 5, 'Meyve suyu karışımı'),
 
-            -- Snacks
-            ('Potato Chips (small)', 2.00, 34, 16, 1.00, 10, 'Salted and crispy potato chips'),
-            ('Candy Bar', 1.50, 6, 19, 0.80, 15, 'Chocolate and candy bar'),
-            ('Granola Bar', 2.25, 3, 12, 1.30, 8, 'Healthy and nutritious granola bar'),
-            ('Cookies (pack of 6)', 2.50, 8, 8, 1.50, 5, 'Soft and chewy cookies'),
-            ('Fruit Snack Pack', 1.75, 5, 10, 1.00, 8, 'Assortment of dried fruits and nuts'),
+            -- Atıştırmalıklar
+            ('Patates Cipsi (küçük)', 2.00, 34, 16, 1.00, 10, 'Tuzlu ve çıtır patates cipsi'),
+            ('Çikolata Barı', 1.50, 6, 19, 0.80, 15, 'Çikolatalı ve şekerli bar'),
+            ('Granola Bar', 2.25, 3, 12, 1.30, 8, 'Sağlıklı ve besleyici granola bar'),
+            ('Kurabiye (6\'lı paket)', 2.50, 8, 8, 1.50, 5, 'Yumuşak ve çiğnenebilir kurabiye'),
+            ('Meyveli Atıştırmalık Paket', 1.75, 5, 10, 1.00, 8, 'Kuru meyve ve kuruyemiş karışımı'),
 
-            -- Personal Care
-            ('Toothpaste', 3.50, 1, 9, 2.00, 5, 'Minty toothpaste for oral hygiene'),
-            ('Hand Sanitizer (small)', 2.00, 2, 13, 1.20, 8, 'Small sanitizer bottle for on-the-go'),
-            ('Pain Relievers (pack)', 5.00, 1, 5, 3.00, 3, 'Over-the-counter pain relief medication'),
-            ('Bandages (box)', 3.00, 0, 10, 2.00, 5, 'Box of adhesive bandages for minor cuts'),
-            ('Sunscreen (small)', 5.50, 6, 5, 3.50, 3, 'Small bottle of sunscreen for sun protection'),
+            -- Kişisel Bakım
+            ('Diş Macunu', 3.50, 1, 9, 2.00, 5, 'Naneli diş macunu'),
+            ('El Dezenfektanı (küçük)', 2.00, 2, 13, 1.20, 8, 'Küçük boy taşınabilir dezenfektan'),
+            ('Ağrı Kesici (paket)', 5.00, 1, 5, 3.00, 3, 'Reçetesiz ağrı kesici ilaç'),
+            ('Yara Bandı (kutu)', 3.00, 0, 10, 2.00, 5, 'Küçük kesikler için yara bandı kutusu'),
+            ('Güneş Kremi (küçük)', 5.50, 6, 5, 3.50, 3, 'Küçük boy güneş koruyucu krem'),
 
-            -- Household
-            ('Batteries (AA, pack of 4)', 4.00, 1, 5, 2.50, 3, 'Pack of 4 AA batteries'),
-            ('Light Bulbs (LED, 2-pack)', 6.00, 3, 3, 4.00, 2, 'Energy-efficient LED light bulbs'),
-            ('Trash Bags (small, 10-pack)', 3.00, 5, 10, 2.00, 5, 'Small trash bags for everyday use'),
-            ('Paper Towels (single roll)', 2.50, 3, 8, 1.50, 5, 'Single roll of paper towels'),
-            ('Multi-Surface Cleaner', 4.50, 2, 5, 3.00, 3, 'All-purpose cleaning spray'),
+            -- Ev Ürünleri
+            ('Pil (AA, 4\'lü paket)', 4.00, 1, 5, 2.50, 3, '4\'lü AA pil paketi'),
+            ('Ampul (LED, 2\'li paket)', 6.00, 3, 3, 4.00, 2, 'Enerji tasarruflu LED ampul'),
+            ('Çöp Poşeti (küçük, 10\'lu)', 3.00, 5, 10, 2.00, 5, 'Günlük kullanım için küçük çöp poşeti'),
+            ('Kağıt Havlu (tek rulo)', 2.50, 3, 8, 1.50, 5, 'Tek rulo kağıt havlu'),
+            ('Çok Amaçlı Temizleyici', 4.50, 2, 5, 3.00, 3, 'Çok amaçlı temizlik spreyi'),
 
-            -- Others
-            ('Lottery Tickets', 2.00, 17, 20, 1.50, 10, 'Assorted lottery tickets'),
-            ('Newspaper', 1.50, 22, 20, 1.00, 5, 'Daily newspaper')
+            -- Diğerleri
+            ('Piyango Bileti', 2.00, 17, 20, 1.50, 10, 'Çeşitli piyango biletleri'),
+            ('Gazete', 1.50, 22, 20, 1.00, 5, 'Günlük gazete')
         """
     )
     conn.commit()
